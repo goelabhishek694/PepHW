@@ -24,7 +24,7 @@ function createDir(dirPath){
 function createFile(teamName,playerName){
     let tn=obj[teamName];
     let pn=playerName.split(" ")[0];
-    console.log(tn," ",pn);
+    // console.log(tn," ",pn);
     let filePath=path.join(__dirname,"IPL2020",tn,pn+".json");
     if(!fs.existsSync(filePath)){
         let createStream=fs.createWriteStream(filePath);
